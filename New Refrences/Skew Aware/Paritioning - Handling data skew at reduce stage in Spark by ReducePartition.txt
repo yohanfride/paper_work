@@ -1,0 +1,40 @@
+#Group Idea
+Data skew using partition model.
+
+#Problem
+However, Spark's speculative execution mechanism is powerless when the data skew is caused by uneven distribution of its input data. The reason is that because re-execution of tasks with the same input data on different machines will result in the same execution time, while redundant tasks occupy part of the resources of the cluster, resulting in an increase in the make span of the entire job.
+
+
+#Idea
+This paper, we propose a balanced data allocation algorithm for data skew problem at reduce stage. 
+- propose a data balanced allocation method called ReducePartition to deal with data skew problem at reduce stage in Spark platform.
+- give related definition of Reduce data skew problem and establishes the mathematical model for it
+- introduce the overall architecture design of the data balanced allocation algorithm ReducePartition, which contains several sub algorithms.
+- compare ReducePartition with HashPartition, RangePartition, and SCID in four situations. Experiment show that...
+
+
+
+#Template
+1. Introduction
+   - Background tech ()
+   - Issues in Backgrounf Tech and the current solution
+   - Main issues (that can`t happen even using the solution)
+   - Proposed Idea (main)
+   - Contribution in point
+   - Rest of paper.
+2. Preliminary
+   - Definition
+   - Problem modeling
+3. [name of proposed idea]
+   - Overview method with algoritm architecture
+     1. explain the main issues to be handle.
+     2. Solution for it
+     3. Briefly exlain architecure of flow.
+   - [Techniques/Algorithm 1]
+   - [Techniques/Algorithm 2]
+   - [Techniques/Algorithm 3] ..
+
+
+#Noted:
+1. Preliminary Knowledge for CPU and Memory utilization.
+2. 

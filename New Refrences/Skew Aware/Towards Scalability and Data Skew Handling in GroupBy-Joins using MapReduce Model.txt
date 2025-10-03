@@ -1,0 +1,18 @@
+#Issues:
+Frameworks (Spark/Hive) still remain vulnerable to communication costs, data skew and tasks imbalance problems.
+
+
+#Proposed Idea: 
+In this paper, we present a new GroupBy-Join algorithm allowing to reduce communication costs considerably while avoiding data skew effects. 
+
+#Concern: 
+- Join operation is performed in the first step and then the group-by operation.
+- Assume that queries may be significantly reduced if the group-by operation and aggregate function are performed before the join
+- [Design Principles] Thus, reducing the size of relations to be joined helps in reducing the communication cost and by consequence in reducing the execution time of queries in parallel and distributed systems. [Used it for pushing down filtering]
+
+#Template
+ 1. Explain main idea (1st parag)
+ 2. Math model
+ 3. Procedure / steps.
+
+ 

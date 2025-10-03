@@ -1,0 +1,7 @@
+#Idea: 
+Key fundamental of  Fast Join Algorithms:
+Tree decompositions, data partitioning, leveraging statistical information, enumeration, and algebraic techniques
+
+#Note:
+This paper highlight PANDA as solution for speed up join processing, it used partition dan sub query.
+

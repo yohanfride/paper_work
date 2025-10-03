@@ -1,0 +1,5 @@
+To solve the problem of uneven data distribution in the shuffle stage of Spark distributed platform, this paper first analyses the causes of data skew in Spark platform, and then establishes a skew model that can quantify the degree of data skew. 
+
+#Method:
+- SAmpling for HH
+- 

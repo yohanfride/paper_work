@@ -1,0 +1,31 @@
+#Issues: 
+ One of the major obstacles hindering effective join processing on MapReduce is data skew. 
+
+#(drawback)Current method:
+  - range-based: does not handle join product skew
+  - randomized: performs worse than the basic hash-based partitioning 
+
+#Proposed:
+  - In this paper, we present a new skew handling method, called multi-dimensional range partitioning (MDRP), to overcome the limitations of the methods. We extend range partitioning by adopting the cross-product space from random partitioning. 
+
+
+#Template: 
+1. Introduction
+   - Target issues (OLAP,Skew)
+   - Current Method and drawback for each method.
+   - Proposed method
+   - Contribution
+   - Rest of paper
+3. [proposed idea title]
+   - what consider about (design principles)
+   - identify heavy cell 
+   - provided theoretical ascpect
+   - add summary
+
+#Experiment
+1. Zipf for data skew inject
+2. 
+
+#Note: 
+1. Adopt experiment (Scalability) (Size: 100M ~ 800M) (Machine: 1, 2, 4, 8 - just 4 type)
+2. 

@@ -1,0 +1,24 @@
+[Technical Domain] Distributed Join Processing
+
+[Trend of Existing Technologies]
+Distributed data processing frameworks play a crucial role by providing scalable and efficient big data processing in OLAP environments.
+
+[Problem Statement Recognized by Experts]
+Handling data skew is a critical challenge in distributed join query processing, since load imbalance can significantly reduce performance. Sampling and counter-based methods are widely applied for heavy hitter detection to mitigate skew. However, they require scanning large volumes of data, with "sampling" risks of missing skewed keys, while "counter-based" may produce false positive detections. Multi-table joins are often processed as sequences of binary joins. A naïve implementation repeats skew handling at each join, often adding extra repartitioning steps to re-detect skewed data, which increases shuffle overhead and leads to inefficient resource usage.
+
+[Research Objective] 
+To develop a skew-handling approach that improves performance by efficiently detecting heavy hitters without extensive scans and optimizing skew handling for multi-table joins.
+
+[Approach / Idea]
+We propose an approach that utilizes the Flow-Join strategy together with Scardina, a model-based cardinality estimator, to detect heavy hitters during execution without cluster-wide scans. For multi-table workloads, we apply a selection push-down strategy before executing binary Flow-Join operators to minimize shuffle overhead and memory usage.
+
+
+[Technical Challenges]
+1. How to accurately identify heavy-hitter keys across join workloads?
+2. How to design a data-skew handling approach that utilizes the Flow-Join strategy to minimize shuffle overhead and improve performance in both binary and multi-table joins?
+
+[Technical Idea]
+1.　We enhance Scardina with a factorization method that enables per-key join cardinality estimation within schema-partitioned models. By issuing SQL queries with GROUP BY expressions, Scardina provides join cardinality estimation of each key. Keys exceeding a threshold are identified as heavy hitters. The models are trained only on heavy-hitter candidates.
+2.　We improve the Flow-Join strategy by employing broadcast joins instead of relying on filters with heavy-hitter sets. This strategy accurately identifies skewed and non-skewed data even when numerous heavy hitters are detected. For multi-table joins, we apply a selection push-down strategy that identifies skewed and non-skewed data before executing a cascade of Flow-Join operators. This approach reduces shuffle overhead and maintains balanced performance.
+
+
