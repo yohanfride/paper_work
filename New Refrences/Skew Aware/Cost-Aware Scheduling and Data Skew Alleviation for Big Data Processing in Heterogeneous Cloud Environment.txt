@@ -1,0 +1,15 @@
+Point can be use as refrences:
+1. Evaluation and Analysis: The details of the cluster are shown in Table 8. Hadoop [30], HiBench, and other software required for experiments are also installed in these nodes and the details of the software are shown in Table 9
+
+--------------------
+Background problems:
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:
+

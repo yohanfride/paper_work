@@ -1,0 +1,34 @@
+Point can be use as refrences:
+1. Abstract:
+#Trend of existing technologies:
+Spark has been continuously developed and popularized. It reduces the data transmission time through efficient memory-based operations
+
+# Experts agree with the problems of existing technologies
+-  In Spark, data skew is very prominent due to the uneven
+distribution of input data and the unbalanced allocation of default partitioning algorithm. When data skew occurs, the execution efficiency of the program will be reduced, especially in the
+reduce stage of Spark
+
+#Goal
+Proposes ReducePartition to solve data skew problem at reduce stage of Spark platform.
+
+2. Introduction
+# trends:
+a large number of parallel computing frameworks for data processing
+have emerged. 
+
+Background problems
+
+
+--------------------
+Background problems/Trend of existing technologies:
+
+Experts agree with the problems of existing technologies
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:

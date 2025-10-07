@@ -1,0 +1,14 @@
+Point can be use as refrences:
+
+1. Abstract: 
+# Background Problem: Hash partitioning strategy maps all the tuples of the two data streams according to their attributes for joining. However, hash partitioning strategy suffers from a serious load imbalance problem caused by the skew distribution of the attributes, which is common in real-world data. The skewed load may seriously affect the system performance.
+
+# Goal: The load skewness problem in distributed join systems. We explore the key tuples which lead to the heavy load skewness. 
+
+# Approach: Propose an efficient key selection algorithm, GreedyFit to find out these key tuples. We design a lightweight tuple migration strategy to solve the load imbalance problem in real-time and implement a new distributed stream join system, FastJoin.
+
+2. Introduction
+# Contribution: FastJoin adopts a dynamic load balancing technique to effectively detect data skew and migrate the data heavyly to lightly loaded... We implement FastJoin on Apache Strom[], 
+
+5. Implementation
+# Experiment Setup: In the experiment, we use real-world data to examine the skew distribution of keys...  

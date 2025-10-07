@@ -1,0 +1,40 @@
+Point can be use as refrences:
+1. Abstract
+#Trend of existing technologies:
+When data is huge distributed computational platforms must be used. 
+
+
+#Experts agree with the problems of existing technologies:
+Handling skew is one of the major challenges in query processing and computing joins is both important and costly.
+
+#Goal: 
+
+#Approach:
+Our algorithm distributes Heavy Hitter (HH) valued records separately by using an adaptation of the Shares algorithm to achieve minimum communication cost. HH values of an attribute is decided by our algorithm and depends on the sizes of the relations (or the part of the relations with HH) and how these sizes interrelate with each
+other. 
+
+#Techn Issues
+- Investigate a family of multiway joins for which a simpler variant of our algorithm can handle skew
+
+#Contribution
+- We present a MapReduce algorithm (SharesSkew) to handle
+skew for multiway joins.
+
+----------------------
+Note:
+1. Intorduction:
+These systems use a two-round algorithm, where the first round identifies the Heavy Hitters. In the second round, tuples that do not have a Heavy Hitter for the join attribute(s) are handled normally. That is, there is one reducer1 for each key, which is associated with a value of the join attribute
+
+--------------------
+Background problems/Trend of existing technologies:
+
+Experts agree with the problems of existing technologies
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:

@@ -1,0 +1,22 @@
+Point can be use as refrences:
+1. Abstract
+#Background problems:   
+- Big data analytics often requires processing complex
+join queries in parallel in distributed systems such as Hadoop,
+Spark, Flink
+
+
+
+--------------------
+Background problems/Trend of existing technologies:
+
+Experts agree with the problems of existing technologies
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:

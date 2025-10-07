@@ -1,0 +1,26 @@
+Point can be use as refrences:
+1. Abstract
+#proposed idea:
+- Skew model that can quantify the degree of data skew. 
+- A shuffle partition scheme is proposed to optimize data skew in Spark distributed platform 
+
+2. Introduction
+# Experts agree with the problems of existing technologies
+The Spark framework itself has not taken effective countermeasure against the data skew problem, during the shuffle phase of Spark
+
+#goal 
+the optimization of Spark ’s shuffle mechanism is a very worthy topic to investigate.
+
+--------------------
+Background problems/Trend of existing technologies:
+
+Experts agree with the problems of existing technologies
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:

@@ -1,0 +1,42 @@
+Point can be use as refrences:
+1. Abstract
+#Trend of existing technologies:
+In distributed workloads involving joins and aggregations, skewed attribute values often cause load balancing issues, leading to stragglers and increased execution times
+
+#[Experts agree with the problems of existing technologies:
+Existing solutions often rely on cost-based models, require extensive parameter tuning, or necessitate modifications to distributed execution engines, limiting their usability and generality.  
+
+#goal:
+A novel patch-based repartitioning algorithm that eliminates load imbalances while minimizing network overhead.
+
+2. Introduction:
+# Method:
+- Since our implementation is skew-insensitive it can be effectively used in any case and the user is not required to know beforehand if the data is skewed.
+
+#Contribution:
+- Operation insensitive to data skew
+- Integration with common distributed SQL engines
+- Priority to local processing:
+
+
+#Tech Issues:
+- Will the overall execution time profit? 
+- Will we benefit more from splitting this set of the group? 
+- Will we have better load balancing? 
+- Will the replication of records cause network-related overheads?
+- However, there are two common targets in all existing efforts: 
+  a) even load balancing and 
+  b) minimal network traffic.
+
+--------------------
+Background problems:
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:
+

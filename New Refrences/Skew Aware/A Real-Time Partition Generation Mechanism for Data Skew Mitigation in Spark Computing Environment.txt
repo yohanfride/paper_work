@@ -1,0 +1,33 @@
+Point can be use as refrences:
+1. Abstract
+
+#Trend of existing technologies
+Due to the limitation of the computing power of a single node, big data is usually processed on a distributed parallel processing framework
+
+#Experts agree with the problems of existing technologies
+Data skew will seriously affect the performance of distributed parallel computing, causing excessive load on some tasks and idle computing resources. 
+
+# Proposed Idea
+Propose an optimization method based on step size sampling, which can more accurately predict the distribution of intermediate data.
+
+
+2. Introduction
+#Tech Issues
+- Excellent partitioning strategy needs to
+consider the problem of the unbalanced distribution of
+computing resources
+- How to alleviate data skew
+
+--------------------
+Background problems/Trend of existing technologies:
+
+Experts agree with the problems of existing technologies
+
+Goal:
+
+Tech Issues:
+
+Contribution:
+
+
+Theory:
